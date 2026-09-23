@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSecurity - Edukasi Keamanan Digital</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header .icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #1d4ed8;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      margin-bottom: 30px;
+    }
+
+    .intro h2 {
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      transition: .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card .emoji {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1d4ed8;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .warning {
+      margin-top: 30px;
+      background: #fff7ed;
+      border-left: 5px solid #f97316;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .tips {
+      margin-top: 30px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .tips h2 {
+      color: #1d4ed8;
+      margin-bottom: 15px;
+    }
+
+    .tips li {
+      margin: 10px 0;
+      margin-left: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 25px;
+      background: #111827;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="icon">🔐</div>
+    <h1>EduSecurity</h1>
+    <p>
+      Website demo edukasi untuk membantu memahami
+      cara menjaga keamanan diri di dunia digital.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#materi">Materi</a>
+    <a href="#tips">Tips</a>
+    <a href="#kontak">Tentang</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2>Belajar Keamanan Digital</h2>
+      <p>
+        Kenali berbagai risiko di internet dan pelajari
+        kebiasaan sederhana untuk melindungi akun serta
+        informasi pribadi.
+      </p>
+    </section>
+
+    <section id="materi">
+      <div class="cards">
+
+        <div class="card">
+          <div class="emoji">🔑</div>
+          <h3>Password Aman</h3>
+          <p>
+            Gunakan password yang panjang dan unik untuk
+            setiap akun. Jangan membagikan password kepada orang lain.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🎣</div>
+          <h3>Phishing</h3>
+          <p>
+            Waspadai pesan atau website yang mencoba
+            meminta password, kode OTP, atau informasi pribadi.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">📱</div>
+          <h3>Keamanan Akun</h3>
+          <p>
+            Aktifkan autentikasi dua faktor (2FA) jika
+            tersedia pada akun yang kamu gunakan.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🌐</div>
+          <h3>Keamanan Internet</h3>
+          <p>
+            Hindari memasukkan informasi sensitif pada
+            website yang tidak kamu percaya.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🚨</div>
+          <h3>Penipuan Online</h3>
+          <p>
+            Jangan mudah percaya pada hadiah, investasi,
+            atau tawaran yang meminta pembayaran atau data pribadi.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">🛡️</div>
+          <h3>Privasi</h3>
+          <p>
+            Pikirkan kembali informasi yang kamu bagikan
+            di media sosial dan platform online.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="warning">
+      <strong>⚠️ Penting:</strong>
+      Website ini hanya untuk edukasi dan simulasi.
+      Jangan memasukkan password asli, kode OTP,
+      nomor kartu, atau informasi sensitif lainnya.
+    </section>
+
+    <section class="tips" id="tips">
+      <h2>✅ Checklist Keamanan Digital</h2>
+
+      <ul>
+        <li>Gunakan password yang berbeda untuk akun penting.</li>
+        <li>Aktifkan 2FA pada akun yang mendukungnya.</li>
+        <li>Jangan membagikan kode OTP.</li>
+        <li>Periksa alamat website sebelum login.</li>
+        <li>Jangan sembarang membuka lampiran atau tautan.</li>
+        <li>Perbarui sistem dan aplikasi secara berkala.</li>
+      </ul>
+
+      <a class="button" href="#materi">
+        Pelajari Materi
+      </a>
+    </section>
+
+    <section class="intro" id="kontak" style="margin-top:30px;">
+      <h2>Tentang Website</h2>
+      <p>
+        EduSecurity adalah proyek demo untuk edukasi
+        keamanan digital.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 EduSecurity — Website Demo Edukasi Keamanan Digital
+  </footer>
+
+</body>
+  </html>
